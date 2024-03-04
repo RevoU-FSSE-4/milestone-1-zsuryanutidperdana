@@ -1,10 +1,108 @@
 :root {
-  --brand-font: ;
-  --content-font: ;
+  --brand-font: "Anta", sans-serif;
+  --content-font: "Roboto", sans-serif;
 }
 
-@media screen and (max-width: 600px) {
+* {
+  margin: 0;
+  font-family: var(--content-font);
 }
 
-@media screen and (min-width: 600.1px) {
+@media screen and (max-width: 480px) {
+  h1 {
+    font-family: var(--brand-font);
+    font-size: 1.7rem;
+  }
+
+  section > h2 {
+    font-family: var(--brand-font);
+    font-size: 1.6rem;
+  }
+
+  .flex-container.y-axis {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-container.x-axis {
+    display: flex;
+  }
+
+  main {
+    padding-left: 1em;
+    row-gap: 2em;
+  }
+  nav {
+    background-color: yellow;
+    padding: 1em;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 9999;
+  }
+
+  #services {
+    row-gap: 3em;
+  }
+  .navbar-items-wrapper {
+    display: none;
+  }
+
+  #hamburger-button {
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+  }
+
+  .card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    row-gap: 3em;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .card-content p {
+    margin: 0.5em;
+    padding-bottom: 2em;
+    font-size: 1rem;
+  }
+
+  .card-content h3 {
+    text-align: center;
+    margin-top: 1em;
+    font-family: var(--brand-font);
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (min-width: 768.01px) {
 }
