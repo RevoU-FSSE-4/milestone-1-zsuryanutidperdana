@@ -26,7 +26,7 @@
       <div class="logo-wrapper">
         <h1>Teman TCG</h1>
       </div>
-      <div class="mobile-menu tablet-menu">
+      <div class="mobile-menu tablet-menu mobile-only">
         <img
           src="https://cdn0.iconfinder.com/data/icons/rounded-basics/24/rounded__menu-512.png"
           alt="hamburger-button"
@@ -48,6 +48,7 @@
         </li>
       </ul>
     </nav>
+    <div class="mobile-only"></div>
     <main class="flex-container y-axis">
       <section class="hero"></section>
       <section class="flex-container y-axis" id="services">
@@ -74,7 +75,16 @@
             </div>
           </div>
           <div class="card">
-            <picture class="card-image"></picture>
+            <picture class="card-image">
+              <source
+                media="(max-width: 480px)"
+                srcset="./assets/img/coaching-crop.png"
+              />
+              <img
+                src="https://tabletopvillage.com/cdn/shop/files/PXL_20230712_220614300_5022da80-6d5b-4097-b167-0a13cdf28960_1200x1200.jpg?v=1689367841"
+                alt="tcg-coaching"
+              />
+            </picture>
             <div class="card-content">
               <h3>Coaching TCG</h3>
               <p>
@@ -85,36 +95,73 @@
             </div>
           </div>
           <div class="card">
-            <picture class="card-image"></picture>
+            <picture class="card-image">
+              <source
+                media="(max-width: 480px)"
+                srcset="./assets/img/decklist-crop.png"
+              />
+              <img
+                src="https://magicalter.com/wp-content/uploads/magic-cards-on-table-1.jpg"
+                alt="deck-consult"
+              />
+            </picture>
             <div class="card-content">
               <h3>Konsultasi Deck</h3>
-              <p></p>
+              <p>
+                Masih bingung dengan decklist kamu? Silahkan konsultasikan
+                kepada kami! Sesuaikan deck dengan style permainan kamu
+              </p>
             </div>
           </div>
         </div>
         <div class="card-wrapper bottom">
           <div class="card">
-            <picture class="card-image"></picture>
+            <picture class="card-image">
+              <source
+                media="(max-width: 480px)"
+                srcset="./assets/img/judges-crop.png"
+              />
+              <img
+                src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fyugiohblog.konami.com%2F2011%2F11%2F&psig=AOvVaw1mGjRMMmoQ6P7g8sVaDdrF&ust=1709729791781000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCLDCwfmV3YQDFQAAAAAdAAAAABAN"
+                alt="judges"
+              />
+            </picture>
             <div class="card-content">
               <h3>Judge untuk Tournament</h3>
-              <p></p>
+              <p>
+                Kami dapat menyalurkan Judge-Judge profesional dengan lisensi di
+                TCG-nya masing-masing.
+              </p>
             </div>
           </div>
           <div class="card">
-            <picture class="card-image"></picture>
+            <picture class="card-image">
+              <source
+                media="(max-width: 480px)"
+                srcset="./assets/img/tournament-crop.png"
+              />
+              <img
+                src="https://pbs.twimg.com/media/GEXDwBgXQAA3OCO?format=jpg&name=large"
+                alt="tournament"
+              />
+            </picture>
             <div class="card-content">
               <h3>Tournament Organizer</h3>
-              <p></p>
+              <p>
+                Kamu ingin menyelenggarkan Turnamen? Jangan khawatir, kami dapat
+                membantu kamu untuk menyelenggarakan turnamen untuk TCG yang
+                kamu inginkan!
+              </p>
             </div>
           </div>
         </div>
       </section>
-      <section id="news">
-        <article></article>
-        <article></article>
-        <div>
-          <!-- read more article -->
-        </div>
+      <section class="grid-container" id="news">
+        <article class="grid-items" id="grid-news-1"></article>
+        <article class="grid-items" id="grid-news-2"></article>
+        <article class="grid-items" id="grid-news-3"></article>
+        <article class="grid-items" id="grid-news-4"></article>
+        <!-- read more article -->
       </section>
       <section id="join-us">
         <form action="" class="form-container"></form>
