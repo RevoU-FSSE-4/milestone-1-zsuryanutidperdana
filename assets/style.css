@@ -14,7 +14,8 @@
     font-size: 1.7rem;
   }
 
-  section > h2 {
+  section h2,
+  .flex-container h2 {
     font-family: var(--brand-font);
     font-size: 1.6rem;
   }
@@ -103,7 +104,8 @@
 
   .grid-container {
     display: grid;
-    width: 90%;
+    width: 98%;
+    height: 100%;
     row-gap: 2em;
     column-gap: 2em;
   }
@@ -115,6 +117,8 @@
 
   .grid-items {
     border: solid 1px black;
+    display: flex;
+    justify-content: center;
   }
 
   #grid-news-1,
@@ -123,6 +127,80 @@
   #grid-news-4 {
     grid-row: span 1;
     grid-column: span 2;
+  }
+  .article-image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .article-content {
+    margin: 0.5em;
+    font-size: 1rem;
+    text-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 70vh;
+    row-gap: 1em;
+    margin-top: 2em;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+      rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+      rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    padding: 0.8em;
+    border-radius: 10px;
+  }
+
+  label {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  input {
+    width: 90%;
+    height: calc(3em + 1.5vh);
+  }
+  .grid-container-form {
+    display: grid;
+    width: 98%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 0.5em;
+    column-gap: 0.5em;
+  }
+  .tcg-logo {
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+      rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+      rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    position: relative;
+    width: 100%;
+    height: calc(2em + 3vh);
+    border-radius: 8px;
+    padding: 0.25vw;
+  }
+  input[type="checkbox"] {
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    top: 35%;
+    left: 70%;
+    cursor: pointer;
+  }
+  img.tcg {
+    width: 75%;
+    height: 90%;
+    overflow: hidden;
+  }
+  input[type="submit"] {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 12px;
+    margin-top: 2vh;
+    padding: 0.5vh;
   }
 }
 
