@@ -32,6 +32,7 @@
   main {
     padding-left: 1em;
     row-gap: 2em;
+    padding-bottom: 10vh;
   }
   nav {
     background-color: yellow;
@@ -42,6 +43,20 @@
     position: -webkit-sticky;
     top: 0;
     z-index: 9999;
+  }
+
+  .company-profile.mobile {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: -1em;
+    position: relative;
+    border: 1px black solid;
+  }
+
+  .company-profile.mobile > img {
+    width: 100%;
+    height: 100%;
   }
 
   #services {
@@ -201,6 +216,61 @@
     border-radius: 12px;
     margin-top: 2vh;
     padding: 0.5vh;
+  }
+
+  footer.flex-container.y-axis {
+    width: 100%;
+    height: 20vh;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2.5vh;
+  }
+  .footer-content.y-axis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .social-media {
+    display: flex;
+    column-gap: 5vw;
+  }
+  .social-media svg {
+    width: 2em;
+    margin-top: 2.5vh;
+    height: 2em;
+    cursor: pointer;
+  }
+  .footer-content p {
+    font-size: 1rem;
+  }
+  .footer-content.tablet,
+  .footer-content.desktop {
+    display: none;
+  }
+  .copyright.mobile {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3.5vh;
+  }
+  .copyright span,
+  .copyright a {
+    font-size: 2.5vw;
+    text-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+  }
+  .copyright span:visited,
+  .copyright a:visited,
+  .copyright span:active,
+  .copyright a:active {
+    color: black;
   }
 }
 
