@@ -71,6 +71,7 @@
     position: relative;
     top: 1em;
     left: 0.5em;
+    font-size: 3rem;
   }
 
   .overlay p {
@@ -306,13 +307,13 @@
 @media screen and (min-width: 480.01px) {
   h1 {
     font-family: var(--brand-font);
-    font-size: 1.7rem;
+    font-size: 3rem;
   }
 
   section h2,
   .flex-container h2 {
     font-family: var(--brand-font);
-    font-size: 1.6rem;
+    font-size: 3rem;
   }
 
   .flex-container.y-axis {
@@ -366,17 +367,17 @@
     position: relative;
     top: 1em;
     left: 0.5em;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 
   .overlay p {
     position: relative;
-    top: 2.5em;
+    top: 3.5em;
     left: 1em;
     text-wrap: wrap;
     width: 90%;
     text-align: justify;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   .hero-card.mobile > img {
@@ -387,10 +388,31 @@
   #services {
     row-gap: 3em;
   }
+
+  nav.flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
   .navbar-items-wrapper {
     display: flex;
     list-style-type: none;
-    column-gap: 2em;
+    column-gap: 1em;
+    width: 60%;
+    justify-content: space-around;
+  }
+
+  a:visited,
+  a:active,
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .navbar-items,
+  nav h1 {
+    width: 100%;
+    font-size: 1.5rem;
+    text-wrap: nowrap;
   }
 
   #hamburger-button {
@@ -432,14 +454,14 @@
   .card-content p {
     margin: 0.5em;
     padding-bottom: 2em;
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   .card-content h3 {
     text-align: center;
     margin-top: 1em;
     font-family: var(--brand-font);
-    font-size: 1.1rem;
+    font-size: 2.2rem;
   }
 
   .grid-container {
@@ -475,7 +497,7 @@
   }
   .article-content {
     margin: 0.5em;
-    font-size: 1rem;
+    font-size: 2rem;
     text-wrap: wrap;
     width: 100%;
     height: 100%;
@@ -507,8 +529,8 @@
   .grid-container-form {
     display: grid;
     width: 98%;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     row-gap: 0.5em;
     column-gap: 0.5em;
   }
@@ -517,7 +539,7 @@
       rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
       rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
     position: relative;
-    width: 100%;
+    width: 80%;
     height: calc(2em + 3vh);
     border-radius: 8px;
     padding: 0.25vw;
@@ -531,8 +553,8 @@
     cursor: pointer;
   }
   img.tcg {
-    width: 75%;
-    height: 90%;
+    width: 78%;
+    height: 80%;
     overflow: hidden;
   }
   input[type="submit"] {
@@ -599,21 +621,21 @@
   }
 }
 
-@media screen and (min-width: 768.01px) {
+@media screen and (min-width: 850px) {
   h1 {
     font-family: var(--brand-font);
-    font-size: 1.7rem;
   }
 
   section h2,
   .flex-container h2 {
     font-family: var(--brand-font);
-    font-size: 1.6rem;
+    font-size: 3rem;
   }
 
   .flex-container.y-axis {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .flex-container.x-axis {
@@ -627,7 +649,7 @@
   }
   nav {
     background-color: yellow;
-    padding: 1em;
+    padding: 2em;
     justify-content: space-between;
     align-items: center;
     position: sticky;
@@ -652,7 +674,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
     color: whitesmoke;
@@ -661,17 +683,18 @@
   .overlay h1 {
     position: relative;
     top: 1em;
-    left: 0.5em;
+    left: 1.1em;
+    font-size: 5rem;
   }
 
   .overlay p {
     position: relative;
-    top: 2em;
-    left: 1em;
+    top: 3.5em;
+    left: 1.5em;
     text-wrap: wrap;
     width: 90%;
     text-align: justify;
-    font-size: 0.9rem;
+    font-size: 3.5rem;
   }
 
   .hero-card.mobile > img {
@@ -682,28 +705,49 @@
   #services {
     row-gap: 3em;
   }
+
+  nav.flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
   .navbar-items-wrapper {
-    display: none;
+    display: flex;
+    list-style-type: none;
+    column-gap: 1em;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  nav a:visited,
+  nav a:active,
+  nav a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .navbar-items,
+  nav h1 {
+    width: 100%;
+    font-size: 3rem;
+    text-wrap: nowrap;
+    text-align: center;
   }
 
   #hamburger-button {
-    width: 2em;
-    height: 2em;
-    cursor: pointer;
+    display: none;
   }
 
   .card-wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     row-gap: 3em;
   }
   .card {
     display: flex;
     flex-direction: column;
-    width: 90%;
-    height: 1fr;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -711,10 +755,23 @@
     align-items: center;
     justify-content: center;
     margin-right: 1.5vw;
+    width: 100%;
+    height: 100%;
+  }
+
+  .top {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .bottom {
+    width: 100vw;
+    height: 100vh;
   }
   .card-image {
     width: 100%;
     height: 100%;
+    overflow: hidden;
   }
 
   .card-image img {
@@ -727,14 +784,14 @@
   .card-content p {
     margin: 0.5em;
     padding-bottom: 2em;
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   .card-content h3 {
     text-align: center;
     margin-top: 1em;
     font-family: var(--brand-font);
-    font-size: 1.1rem;
+    font-size: 2.2rem;
   }
 
   .grid-container {
@@ -747,7 +804,7 @@
 
   #news {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 
   .grid-items {
@@ -761,7 +818,7 @@
   #grid-news-3,
   #grid-news-4 {
     grid-row: span 1;
-    grid-column: span 2;
+    grid-column: span 1;
   }
   .article-image {
     width: 100%;
@@ -770,7 +827,7 @@
   }
   .article-content {
     margin: 0.5em;
-    font-size: 1rem;
+    font-size: 2rem;
     text-wrap: wrap;
     width: 100%;
     height: 100%;
@@ -780,40 +837,45 @@
   .form-container {
     display: flex;
     flex-direction: column;
-    width: 90%;
-    height: 80vh;
+    width: 90vw;
+    height: 70%;
     row-gap: 1em;
     margin-top: 2em;
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
       rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
       rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-    padding: 0.8em;
+    padding: 2em 3em;
+    padding-bottom: 50vh;
     border-radius: 10px;
   }
 
   label {
     text-decoration: underline;
     font-weight: bold;
+    font-size: 3rem;
   }
   input {
-    width: 90%;
-    height: calc(3em + 1.5vh);
+    width: 98%;
+    padding: 1em 0;
+    font-size: 3rem;
+    border-radius: 8px;
   }
   .grid-container-form {
     display: grid;
     width: 98%;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    row-gap: 0.5em;
-    column-gap: 0.5em;
+    height: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 3em;
+    column-gap: 2em;
   }
   .tcg-logo {
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
       rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
       rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
     position: relative;
-    width: 100%;
-    height: calc(2em + 3vh);
+    width: 90%;
+    height: 100%;
     border-radius: 8px;
     padding: 0.25vw;
   }
@@ -826,21 +888,22 @@
     cursor: pointer;
   }
   img.tcg {
-    width: 75%;
-    height: 90%;
+    width: 78%;
+    height: 80%;
     overflow: hidden;
   }
   input[type="submit"] {
     width: 100%;
     cursor: pointer;
     border-radius: 12px;
-    margin-top: 2vh;
-    padding: 0.5vh;
+    margin-top: 50vh;
+    padding: 2vh;
+    font-size: 2.5rem;
   }
 
   footer.flex-container.y-axis {
     width: 100%;
-    height: 20vh;
+    height: 100%;
     background: rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
@@ -855,33 +918,33 @@
   }
   .social-media {
     display: flex;
-    column-gap: 5vw;
+    column-gap: 2.5vw;
   }
   .social-media svg {
     width: 2em;
-    margin-top: 2.5vh;
+    margin-top: 5vh;
     height: 2em;
     cursor: pointer;
   }
+  .footer-content h1 {
+    font-size: 5rem;
+  }
   .footer-content p {
-    font-size: 1rem;
+    font-size: 3.5rem;
   }
-  .footer-content.tablet,
-  .footer-content.desktop {
-    display: none;
-  }
-  .copyright.mobile {
+  .copyright.desktop {
     list-style-type: none;
     display: flex;
     width: 100%;
     height: 100%;
     justify-content: space-around;
     align-items: center;
-    margin-top: 3.5vh;
+    margin-top: 25vh;
+    column-gap: 5vw;
   }
   .copyright span,
   .copyright a {
-    font-size: 2.5vw;
+    font-size: 2vw;
     text-wrap: nowrap;
     width: 100%;
     height: 100%;
@@ -891,5 +954,9 @@
   .copyright span:active,
   .copyright a:active {
     color: black;
+  }
+
+  h4 {
+    font-size: 3rem;
   }
 }
